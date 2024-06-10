@@ -2,17 +2,13 @@
 
 #### Install
 
-These are the default instructions using Vim 8's `|packages|` feature. See sections below, if you use other plugin managers.
-
 1. Create theme folder (in case you don't have it yet):
 
 - `\*nix`:
 
 ```bash
-# vim 8.2+
+# vim 9+
 mkdir -p ~/.vim/pack/themes/start
-# vim 8.0
-mkdir -p ~/.vim/pack/themes/opt
 ```
 
 - Windows: create directory `$HOME\vimfiles\pack\themes\start` or
@@ -23,10 +19,8 @@ mkdir -p ~/.vim/pack/themes/opt
 - `\*nix`:
 
 ```bash
-# vim 8.2+
+# vim 9+
 cd ~/.vim/pack/themes/start
-# vim 8.0
-cd ~/.vim/pack/themes/opt
 ```
 
 - Windows: navigate to the directory you created earlier
@@ -34,7 +28,7 @@ cd ~/.vim/pack/themes/opt
 3. Clone the repository using the "dracula" name:
 
 ```bash
-git clone https://github.com/dracula/vim.git dracula
+git clone https://github.com/ethanmchls/vim9-dracula.git dracula
 ```
 
 (Or use your favorite GUI client, or download the ZIP)
@@ -42,11 +36,14 @@ git clone https://github.com/dracula/vim.git dracula
 4. Edit your `vimrc` file with the following content:
 
 ```
-if v:version < 802
-    packadd! dracula
-endif
 syntax enable
 colorscheme dracula
+```
+
+If your background is gray rather than the proper dracula background, edit your `vimrc` and add the following:
+
+```
+let g:dracula_colorterm = 0
 ```
 
 The location of the `vimrc` varies between platforms:
@@ -61,7 +58,7 @@ The location of the `vimrc` varies between platforms:
 Navigate to your vim directory (`\*nix`: `~/.vim`; Windows: `$HOME\vimfiles`)
 
 ```bash
-git submodule add git@github.com:dracula/vim.git bundle/dracula
+git submodule add git@github.com:ethanmchls/vim9-dracula.git bundle/dracula
 ```
 
 Place `colorscheme dracula` after `execute pathogen#infect()`.
@@ -69,7 +66,7 @@ Place `colorscheme dracula` after `execute pathogen#infect()`.
 - If you [use vim + vundle](https://github.com/VundleVim/Vundle):
 
 ```vim
-Plugin 'dracula/vim', { 'name': 'dracula' }
+Plugin 'ethanmchls/vim9-dracula.git', { 'name': 'dracula' }
 :PluginInstall
 ```
 
@@ -79,7 +76,7 @@ Place `colorscheme dracula` after `call vundle#end()`.
   the plugin in a directory called 'dracula' instead of just 'vim'):
 
 ```vim
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'ethanmchls/vim9-dracula.git', { 'as': 'dracula' }
 :PlugInstall
 ```
 
@@ -93,7 +90,7 @@ Place `colorscheme dracula` after `call plug#end()`.
   colorscheme = "dracula"
   colorscheme_bg = "dark"
 [[custom_plugins]]
-  repo = "dracula/vim"
+  repo = "ethanmchls/vim9-dracula.git"
   name = "dracula"
   merged = false
 ```
