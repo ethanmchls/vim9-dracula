@@ -1,6 +1,6 @@
 # Dracula for [Vim](http://www.vim.org/)
 
-> A dark theme for [Vim](http://www.vim.org/) that works with vim 9.0.
+> A dark theme for [Vim](http://www.vim.org/) that works with vim 9.0. The code found on the official [Dracula website](https://draculatheme.com) only works on vim 8.2 and below. Aside from bug fixes, this repo is identical to the [official repo](https://github.com/dracula/vim)
 
 ![Screenshot](./screenshot.png)
 
@@ -8,7 +8,7 @@ Screenshot taken with the [pangloss/vim-javascript](https://github.com/pangloss/
 
 ## Install
 
-All instructions can be found at [draculatheme.com/vim](https://draculatheme.com/vim).
+Follow the instructions in [INSTALL.md](https://github.com/ethanmchls/vim9-dracula/INSTALL.md).
 
 ## Team
 
