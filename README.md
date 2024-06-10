@@ -8,7 +8,7 @@ Screenshot taken with the [pangloss/vim-javascript](https://github.com/pangloss/
 
 ## Install
 
-Follow the instructions in [INSTALL.md](https://github.com/ethanmchls/vim9-dracula/INSTALL.md).
+Follow the instructions in [INSTALL.md](https://github.com/ethanmchls/vim9-dracula/blob/main/INSTALL.md).
 
 ## Team
 
