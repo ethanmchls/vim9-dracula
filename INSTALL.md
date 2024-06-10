@@ -66,7 +66,7 @@ Place `colorscheme dracula` after `execute pathogen#infect()`.
 - If you [use vim + vundle](https://github.com/VundleVim/Vundle):
 
 ```vim
-Plugin 'ethanmchls/vim9-dracula.git', { 'name': 'dracula' }
+Plugin 'ethanmchls/vim9-dracula', { 'name': 'dracula' }
 :PluginInstall
 ```
 
@@ -76,7 +76,7 @@ Place `colorscheme dracula` after `call vundle#end()`.
   the plugin in a directory called 'dracula' instead of just 'vim'):
 
 ```vim
-Plug 'ethanmchls/vim9-dracula.git', { 'as': 'dracula' }
+Plug 'ethanmchls/vim9-dracula', { 'as': 'dracula' }
 :PlugInstall
 ```
 
@@ -90,7 +90,7 @@ Place `colorscheme dracula` after `call plug#end()`.
   colorscheme = "dracula"
   colorscheme_bg = "dark"
 [[custom_plugins]]
-  repo = "ethanmchls/vim9-dracula.git"
+  repo = "ethanmchls/vim9-dracula"
   name = "dracula"
   merged = false
 ```
