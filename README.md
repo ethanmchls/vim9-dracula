@@ -1,6 +1,6 @@
 # Dracula for [Vim](http://www.vim.org/)
 
-> A dark theme for [Vim](http://www.vim.org/).
+> A dark theme for [Vim](http://www.vim.org/) that works with vim 9.0.
 
 ![Screenshot](./screenshot.png)
 
